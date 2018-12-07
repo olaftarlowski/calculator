@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.calcButton{
+    background-color: blue;
+    border: 2px solid purple;
+    width: 50px;
+    height: 50px;
+}
+
+.main {
+    margin: auto;
+    margin-top: 8%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 60vw;
+    height: 80vh;
+    background-color: black;
+    padding: 15px;
+}
+
+.calcDesktop {
+    display: flex;
+    flex-direction: row;
+}
+
+.calcNumbers {
+    flex: 2.5;
+    display: flex;
+    flex-direction: column;
+    background-color: #722;
+    margin: 10px;
+}
+.calcSymbols {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #722;
+    margin: 10px;
+}
+.operator {
+    flex-basis: 22%;
+    justify-content: space-around;
+    background-color: darkgoldenrod;
+    margin: 15px;
+}
+
+.calcSection {
+    flex-grow: 1;
+    background-color: #334;
+    padding: ;
+    margin: 10px;
+}
+.rowNumbers {
+    flex-basis: 22%;
+    background-color: #123;
+    margin: 6px;
+    padding: 6px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.calcMathNumber {
+    flex-basis: 30%;
+    background-color: white;
+    margin: 5px;
+}
+
+.screen{
+    flex-basis: 15%;
+}
+.equation{
+    flex-basis: 15%;
+}
+.calcDesktop{
+    flex-basis: 60%;
+}
