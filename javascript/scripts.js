@@ -12,7 +12,17 @@ const buttonSevenClick = function (){
     insert(7);
 }
 
-
+//equals
+const equals = function(){
+    let exp = document.form.textView.value;
+    if (exp) {
+        document.form.textView.value = eval(exp);
+    }
+}
+//clear input
+const clear = function(){
+    document.form.textView.value = "";
+}
 
 // initialization function
 const init = function(){
