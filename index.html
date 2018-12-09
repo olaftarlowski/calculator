@@ -8,11 +8,15 @@
 <body>
     <div class="main">
         <div class="screen calcSection"></div>
-        <div class="equation calcSection"><input type="" class="textView" name="textView" disabled></div>
+        <div class="equation calcSection">
+            <form action="" class="textView" name="form">
+                <input type="" class="textView" name="textView" >
+            </form>
+        </div>
         <div class="calcDesktop calcSection">
             <div class="calcNumbers ">
                 <div class="sevenToNine rowNumbers">
-                    <div class="calcMathNumber"><button class="calcButton">7</button></div>
+                    <div class="calcMathNumber"><button class="calcButton" id="buttonSeven" value="">7</button></div>
                     <div class="calcMathNumber"><button class="calcButton">8</button></div>
                     <div class="calcMathNumber"><button class="calcButton">9</button></div>
                 </div>
@@ -33,7 +37,7 @@
                 </div>
             </div>
             <div class="calcSymbols ">
-                <div class="operator"><button class="calcButton">+</button></div>
+                <div class="operator"><button class="calcButton" id="buttonPlus">+</button></div>
                 <div class="operator"><button class="calcButton">-</button></div>
                 <div class="operator"><button class="calcButton">*</button></div>
                 <div class="operator"><button class="calcButton">/</button></div>

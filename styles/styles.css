@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+.form {
+    flex-grow: 1;
+}
 
 .main {
     margin: auto;
@@ -19,7 +21,8 @@
 .textView {
     width: 100%;
     height: 100%;
-    font-size: 32px;
+    font-size: 52px;
+    flex-basis: 1;
 }
 
 .calcDesktop {
@@ -40,7 +43,7 @@
     flex-direction: column;
     background-color: #722;
     margin: 10px;
-    display: flex;
+    align-content: center;
 }
 .operator {
     flex-basis: 19%;
@@ -48,6 +51,7 @@
     background-color: darkgoldenrod;
     margin: 11px;
     display: flex;
+    align-items: center;
 }
 
 .calcSection {
@@ -55,6 +59,7 @@
     background-color: #334;
     padding: ;
     margin: 10px;
+    display: flex;
 }
 .rowNumbers {
     flex-basis: 22%;
@@ -71,6 +76,7 @@
     margin: 5px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .screen{
@@ -78,6 +84,8 @@
 }
 .equation{
     flex-basis: 15%;
+    display: flex;
+    justify-content: center;
 }
 .calcDesktop{
     flex-basis: 60%;
@@ -88,6 +96,6 @@
     background-color: grey;
     padding: 6px 14px;
     font-size: 20px;
-    height: 44px;
-    width: 44px;    
+    height: 64px;
+    width: 64px;    
 }
