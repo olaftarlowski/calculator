@@ -58,7 +58,54 @@ const buttonZeroClick = function (){
     insert(0);
 }
 //operators
-
+const buttonPlusClick = function (){
+    let inputValue = document.form.textView.value;
+    let lastInputValue = inputValue.substring(inputValue.length-1, inputValue.length);
+    let result = operatorSymbols.find(elem => elem === lastInputValue);
+    
+    if (result === lastInputValue){
+            return inputValue;
+        }
+        else {
+            insert("+");
+        }
+}
+const buttonMinusClick = function (){
+    let inputValue = document.form.textView.value;
+    let lastInputValue = inputValue.substring(inputValue.length-1, inputValue.length);
+    let result = operatorSymbols.find(elem => elem === lastInputValue);
+    
+    if (result === lastInputValue){
+            return inputValue;
+        }
+        else {
+            insert("-");
+        }
+}
+const buttonMultiplyClick = function (){
+    let inputValue = document.form.textView.value;
+    let lastInputValue = inputValue.substring(inputValue.length-1, inputValue.length);
+    let result = operatorSymbols.find(elem => elem === lastInputValue);
+    
+    if (result === lastInputValue){
+            return inputValue;
+        }
+        else {
+            insert("*");
+        }
+}
+const buttonDivideClick = function (){
+    let inputValue = document.form.textView.value;
+    let lastInputValue = inputValue.substring(inputValue.length-1, inputValue.length);
+    let result = operatorSymbols.find(elem => elem === lastInputValue);
+    
+    if (result === lastInputValue){
+            return inputValue;
+        }
+        else {
+            insert("/");
+        }
+}
 //equals
 const equation = function(){
     let exp = document.form.textView.value;
@@ -97,6 +144,12 @@ const init = function(){
     
     //equation
     equals.addEventListener("click", equation);
+    
+    //operators
+    buttonPlus.addEventListener("click", buttonPlusClick);
+    buttonMinus.addEventListener("click", buttonMinusClick);
+    buttonMultiply.addEventListener("click", buttonMultiplyClick);
+    buttonDivide.addEventListener("click", buttonDivideClick);
 }
 
 init();
