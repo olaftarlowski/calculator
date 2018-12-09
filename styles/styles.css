@@ -69,6 +69,7 @@ body {
     padding: ;
     margin: 10px;
     display: flex;
+    margin-bottom: 30px;
 }
 .rowNumbers {
     flex-basis: 22%;
@@ -98,7 +99,7 @@ body {
     flex-basis: 60%;
 }
 .calcButton {
-    display: flex;
+    
     justify-content: center;
     background-color: #6b717a;
     padding: 6px 14px;
