@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    background: url(/assets/background-image-desk-from-above.jpg);
+    background: url(https://images.unsplash.com/photo-1520846692007-5da001f1b57c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1090&q=80);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
