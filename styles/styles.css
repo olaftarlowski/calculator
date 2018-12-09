@@ -21,7 +21,7 @@ body {
     flex-direction: column;
     width: 60vw;
     height: 80vh;
-    padding: 15px;
+    padding: 25px;
     border-radius: 40px;
     border: 2px solid #6b717a;
     background: #0F2027;  /* fallback for old browsers */
@@ -69,7 +69,7 @@ body {
     padding: ;
     margin: 10px;
     display: flex;
-    margin-bottom: 30px;
+    
 }
 .rowNumbers {
     flex-basis: 22%;
