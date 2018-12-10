@@ -8,9 +8,21 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bolder;
 }
 .form {
     flex-grow: 1;
+    
+}
+input {
+    color: black;
+    display: flex;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    padding: 3px 10px;
+    
 }
 
 .main {
@@ -27,14 +39,16 @@ body {
     background: -webkit-linear-gradient(left, #2C5364, #203A43, #0F2027);
     background: -o-linear-gradient(left, #2C5364, #203A43, #0F2027);
     background: linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
 
 }
 .textView {
     width: 100%;
     height: 100%;
-    font-size: 52px;
+    font-size: 62px;
     flex-basis: 1;
     border: 1px solid black;
+    border-radius: 5px;
 }
 
 .calcDesktop {
@@ -98,14 +112,15 @@ body {
     flex-basis: 60%;
 }
 .calcButton {
-    
+    display: flex;
     justify-content: center;
     background-color: #6b717a;
     padding: 6px 14px;
-    font-size: 20px;
+    font-size: 32px;
     height: 64px;
     width: 64px;    
     border-radius: 15px;
     cursor: pointer;
-    
+    font-family: 'Oswald', sans-serif;
+    font-weight: bolder;
 }
