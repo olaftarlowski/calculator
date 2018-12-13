@@ -20,7 +20,16 @@ const clear = function() {
 const equation = function() {
     let exp = document.form.textView.value;
     if (exp) {
+        let holdVal = document.form.textView.value;
         document.form.textView.value = eval(exp);
+        if (document.form.textView.value == Infinity || document.form.textView.value == NaN){
+            document.form.textView.value = holdVal;
+            alert( "Error! You can not divide by zero!"); 
+            return;
+        }
+        else {
+            return eval(exp);
+        }
     }
 }
 
@@ -28,16 +37,8 @@ const equation = function() {
 const buttonPushValue = function() {
     console.log("red");
     dataVid = this.getAttribute('value');
-    let inputValue = document.form.textView.value;
-    let lastInputValue = inputValue.substring(inputValue.length - 1, inputValue.length);
-    let result = operatorSymbols.find(elem => elem === lastInputValue);
-
-    if (result === dataVid) {
-        return inputValue;
-    } else {
+    
         insert(dataVid);
-    }
-    //    insert(dataVid);
 }
 
 const init = function() {
@@ -55,7 +56,17 @@ const init = function() {
 
 
 const insert = function(dataVid) {
-    document.form.textView.value = document.form.textView.value + dataVid;
+    let inputValue = document.form.textView.value;
+    let lastInputValue = inputValue.substring(inputValue.length - 1, inputValue.length);
+    let result = operatorSymbols.find(elem => elem === lastInputValue);
+
+    if (result === dataVid && result === lastInputValue) {
+        return dataVid;
+    } else {
+//        insert(dataVid);
+        document.form.textView.value = document.form.textView.value + dataVid;
+    }
+    
 }
 init();
 
