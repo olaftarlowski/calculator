@@ -1,118 +1,120 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-	background: url(https://images.unsplash.com/photo-1520846692007-5da001f1b57c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1090&q=80);
-	background-size: cover;
-	background-repeat: no-repeat;
-	height: 100vh;
-	font-family: 'Oswald', sans-serif;
-	font-weight: bolder;
+  background: url(https://images.unsplash.com/photo-1520846692007-5da001f1b57c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1090&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  font-family: "Oswald", sans-serif;
+  font-weight: bolder;
 }
 .form {
-	flex-grow: 1;
+  flex-grow: 1;
 }
 input {
-	color: black;
-	display: flex;
-	font-family: 'Oswald', sans-serif;
-	font-weight: bolder;
-	letter-spacing: 2px;
-	padding: 3px 10px;
+  color: black;
+  display: flex;
+  font-family: "Oswald", sans-serif;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  padding: 3px 10px;
 }
 .main {
-	margin: auto;
-	margin-top: 8%;
-	display: flex;
-	justify-content: flex-start;
-	flex-direction: column;
-	width: 60vw;
-	padding: 25px;
-	border-radius: 40px;
-	border: 2px solid #6b717a;
-	background: #0F2027;
-	/* fallback for old browsers */
-	background: -webkit-linear-gradient(left, #2C5364, #203A43, #0F2027);
-	background: -o-linear-gradient(left, #2C5364, #203A43, #0F2027);
-	background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
-	/* Chrome 10-25, Safari 5.1-6 */
-	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  max-width: 512px;
+
+  margin: auto;
+  margin-top: 8%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 60vw;
+  padding: 25px;
+  border-radius: 40px;
+  border: 2px solid #6b717a;
+  background: #0f2027;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(left, #2c5364, #203a43, #0f2027);
+  background: -o-linear-gradient(left, #2c5364, #203a43, #0f2027);
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  /* Chrome 10-25, Safari 5.1-6 */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .textView {
-	width: 100%;
-	height: 100%;
-	font-size: 62px;
-	flex-basis: 1;
-	border: 1px solid black;
-	border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  font-size: 62px;
+  flex-basis: 1;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 .calcDesktop {
-	display: flex;
-	flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 .calcNumbers {
-	flex: 2.5;
-	display: flex;
-	flex-direction: column;
-	margin: 10px;
+  flex: 2.5;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
 }
 .calcSymbols {
-	flex: 1;
-	display: flex;
-	flex-direction: column;
-	margin: 10px;
-	align-content: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  align-content: center;
 }
 .operator {
-	flex-basis: 19%;
-	justify-content: space-around;
-	margin: 11px;
-	display: flex;
-	align-items: center;
+  flex-basis: 19%;
+  justify-content: space-around;
+  margin: 11px;
+  display: flex;
+  align-items: center;
 }
 .calcSection {
-	flex-grow: 1;
-	padding: ;
-	margin: 10px;
-	display: flex;
+  flex-grow: 1;
+  padding: ;
+  margin: 10px;
+  display: flex;
 }
 .rowNumbers {
-	flex-basis: 22%;
-	margin: 6px;
-	padding: 6px;
-	display: flex;
-	justify-content: space-around;
+  flex-basis: 22%;
+  margin: 6px;
+  padding: 6px;
+  display: flex;
+  justify-content: space-around;
 }
 .calcMathNumber {
-	flex-basis: 30%;
-	margin: 5px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  flex-basis: 30%;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.screen{
-	flex-basis: 15%;
+.screen {
+  flex-basis: 15%;
 }
-.equation{
-	flex-basis: 15%;
-	display: flex;
-	justify-content: center;
+.equation {
+  flex-basis: 15%;
+  display: flex;
+  justify-content: center;
 }
-.calcDesktop{
-	flex-basis: 60%;
+.calcDesktop {
+  flex-basis: 60%;
 }
 .calcButton {
-	display: flex;
-	justify-content: center;
-	background-color: #6b717a;
-	padding: 6px 14px;
-	font-size: 32px;
-	height: 64px;
-	width: 64px;
-	border-radius: 15px;
-	cursor: pointer;
-	font-family: 'Oswald', sans-serif;
-	font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  background-color: #6b717a;
+  padding: 6px 14px;
+  font-size: 32px;
+  height: 64px;
+  width: 64px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-family: "Oswald", sans-serif;
+  font-weight: bolder;
 }
